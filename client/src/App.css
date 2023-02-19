@@ -1,0 +1,129 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+.App {
+  display: grid;
+  place-items:center;
+  height: 100vh;
+  background-color: #128c7e;   /* #111b21 */
+}
+.logIn{
+  width: 600px;
+  height:350px;
+  border: 5px solid black;   /*   #128c7e */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logIn input{
+  margin: 10px;
+  width: 200px;
+  height: 40px;
+  border: 3px solid black;
+  border-radius: 7px;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+.logIn input:focus{
+  outline: none;
+}
+
+::placeholder {
+  color: rgb(248, 240, 240);
+  opacity: 0.7; 
+  /* font-weight: bolder; */
+}
+
+.logIn button{
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  margin-top: 45px;
+  border-radius: 7px;
+}
+
+.logIn button:hover {
+  cursor: pointer;
+  background-color: #075e54;
+}
+
+.chatContainer{
+  width: 600px;
+  height:350px;
+  border: 5px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.chatContainer .messages{
+  flex: 80%;
+  width: 100%;
+  padding-left: 20px;
+  /* background-color: rgb(8, 8, 8); */
+}
+
+.chatContainer .messageInputs{
+  flex: 20%;
+  width: 100%;
+  display: flex; 
+  flex-direction: row;
+}
+
+.chatContainer .messageInputs input{
+  flex: 80%;
+  height: calc(100% -5px);
+  border-radius: 7px;
+  border: none;
+  padding-left: 20px;
+  font-size: 20px;
+  /* border: 4px solid #075e54; */
+}
+
+.chatContainer .messageInputs button {
+  flex: 20%;
+  height: 100% ;
+  color: black;
+  font-size: 15px;
+  border-radius: 7px;
+  background-color: #25D366;
+}
+
+.messageContainer{
+  display:flex;
+  width: calc(100%-30px);
+}
+#You{
+  justify-content: flex-start;
+}
+
+#Other{
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+#Other .messageIndividual{
+  background-color: antiquewhite;
+  color: black;
+  font-weight:bolder ;
+}
+
+.messageIndividual{
+  width: 200px;
+  height: 60px;
+  border-radius: 15px 50px;
+  display: grid;
+  place-items: center;
+  background-color: black;
+  opacity: 0.9;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  margin-top: 20px;
+  font-weight: bolder;
+  margin-right: 14px;
+}
