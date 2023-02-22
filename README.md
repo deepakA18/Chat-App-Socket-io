@@ -49,7 +49,7 @@ Handling access control of cors policy:
 
 useEffect(() => {
     socket = io(CONNECTION_PORT,{
-      transports: ['websocket','polling','flashsocket'],  //handling access control of cors policy.
+      transports: ['websocket','polling','flashsocket'],  
     });
   }, []);
 
